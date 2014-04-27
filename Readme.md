@@ -49,12 +49,12 @@ Boris#rules : Object
 /*
  * Current rule in execution.
  */
-Boris#crule : null
+Boris#crule : Rule
 
 /*
  * Current data.
  */
-Boris#cdata : null
+Boris#cdata : Buffer
 
 /*
  * Boolean to signal that data is fragmeneted,
