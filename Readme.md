@@ -74,17 +74,31 @@ Boris#cpos : Number
 
 ```javascript
 /*
- * parse a chunk of data
+ * parse a chunk of data.
  */
 Boris#parse( Buffer data ) : undefined
 
 /*
- * reset parser state
+ * reset parser state.
  */
 Boris#reset() : undefined
 
 ```
 
+###Events
+
+```javascript
+/*
+ * the current executing rule has found a result.
+ */
+Boris.on( 'match', function ( Rule rule, Boolean error, Object data ) { .. } )
+
+/*
+ * the current executing rule needs further data to continue.
+ */
+Boris.on( 'miss', function ( Rule rule, Boolean error, Object data ) { .. } )
+
+``` 
 ------------------------------------------------------------------------
 
 

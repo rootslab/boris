@@ -1,6 +1,6 @@
 {
   "name": "boris",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Boris, a Redis Protocol Parser.",
   "homepage": "https://github.com/rootslab/boris",
   "private": false,
