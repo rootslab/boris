@@ -91,12 +91,17 @@ Boris#reset() : undefined
 /*
  * the current executing rule has found a result.
  */
-Boris.on( 'match', function ( Rule rule, Boolean error, Object data ) { .. } )
+Boris.on( 'match', function ( Boolean error, Buffer || Array result ) { .. } )
 
 /*
  * the current executing rule needs further data to continue.
  */
-Boris.on( 'miss', function ( Rule rule, Boolean error, Object data ) { .. } )
+Boris.on( 'miss', function ( Rule rule, Number position ) { .. } )
+
+/*
+ * Data was totally parsed.
+ */
+Boris.on( 'end', function () { .. } )
 
 ``` 
 ------------------------------------------------------------------------
