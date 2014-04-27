@@ -33,9 +33,9 @@ $ npm test
 > Create an instance.
 
 ```javascript
-Boris()
+var b = Boris()
 // or
-new Boris()
+var b = new Boris()
 ```
 
 ###Private Properties
@@ -57,7 +57,7 @@ Boris#crule : Rule
 Boris#cdata : Buffer
 
 /*
- * Boolean to signal that data is fragmeneted,
+ * Boolean to signal that data is fragmented,
  * then another chunk is expected.
  */
 Boris#mchk : Boolean
