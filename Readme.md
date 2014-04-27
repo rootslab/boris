@@ -44,28 +44,28 @@ var b = new Boris()
 /*
  * Protocol rules: bulk, multibulk, status, integer, error.
  */
-Boris#rules : Object
+Boris.rules : Object
 
 /*
  * Current rule in execution.
  */
-Boris#crule : Rule
+Boris.crule : Rule
 
 /*
- * Current data.
+ * Current parser data.
  */
-Boris#cdata : Buffer
+Boris.cdata : Buffer
 
 /*
  * Boolean to signal that data is fragmented,
  * then another chunk is expected.
  */
-Boris#mchk : Boolean
+Boris.mchk : Boolean
 
 /*
- * Current data position.
+ * Current parser position in the data.
  */
-Boris#cpos : Number
+Boris.cpos : Number
 ```
 
 ###Methods
