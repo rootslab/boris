@@ -40,6 +40,8 @@ var b = new Boris()
 
 ###Private Properties
 
+> Don't mess with these properties.
+
 ```javascript
 /*
  * Protocol rules: bulk, multibulk, status, integer, error.
@@ -90,8 +92,17 @@ Boris#reset() : undefined
 ```javascript
 /*
  * the current executing rule has found a result.
+ *
+ * NOTE: the boolean 'isError' signals a Redis error reply,
+ * not a runtime Error.
  */
-Boris.on( 'match', function ( Boolean error, Array result ) { .. } )
+Boris.on( 'match', function ( Boolean isError, Array result ) { .. } )
+
+/*
+ * A parse error occurred, the parser wasn't able to recognize
+ * the current control char.
+ */
+Boris.on( 'error', function ( String emsg, Buffer data ) { .. } )
 
 /*
  * the current executing rule needs further data to continue.
