@@ -91,7 +91,7 @@ Boris#reset() : undefined
 /*
  * the current executing rule has found a result.
  */
-Boris.on( 'match', function ( Boolean error, Buffer || Array result ) { .. } )
+Boris.on( 'match', function ( Boolean error, Array result ) { .. } )
 
 /*
  * the current executing rule needs further data to continue.
