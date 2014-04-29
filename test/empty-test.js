@@ -2,7 +2,6 @@
 
 /* 
  * Empty Test
- *
  */
 
 var log = console.log
