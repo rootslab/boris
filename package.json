@@ -26,7 +26,7 @@
   "devDependencies": {},
   "main": "index",
   "engines": {
-    "node": ">=0.4.x"
+    "node": ">=0.8.x"
   },
   "scripts": {
     "test": "bash test/run.sh"

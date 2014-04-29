@@ -40,7 +40,7 @@ var b = new Boris()
 
 ###Private Properties
 
-> Don't mess with these properties.
+> __WARNING__: Don't mess with these properties.
 
 ```javascript
 /*
@@ -68,6 +68,11 @@ Boris.mchk : Boolean
  * Current parser position in the data.
  */
 Boris.cpos : Number
+
+/*
+ * Current parser stack for multibulk replies.
+ */
+Boris.peela : Peela
 ```
 
 ###Methods
@@ -92,7 +97,7 @@ Boris#reset() : undefined
 ```javascript
 /*
  * The current executing rule has found a result.
- * The convert function is an utility function that
+ * The convert function argument is an utility that
  * scans an array and turns all Buffers into Strings.
  *
  * NOTE: the boolean 'isError' signals a Redis error reply,
