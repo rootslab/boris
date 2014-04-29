@@ -91,12 +91,14 @@ Boris#reset() : undefined
 
 ```javascript
 /*
- * the current executing rule has found a result.
+ * The current executing rule has found a result.
+ * The convert function is an utility function that
+ * scans an array and turns all Buffers into Strings.
  *
  * NOTE: the boolean 'isError' signals a Redis error reply,
  * not a runtime Error.
  */
-Boris.on( 'match', function ( Boolean isError, Array result ) { .. } )
+Boris.on( 'match', function ( Boolean isError, Array result, Function convert ) { .. } )
 
 /*
  * A parse error occurred, the parser wasn't able to recognize

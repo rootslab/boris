@@ -27,7 +27,7 @@
  *
  *    s.slowlog.get(0);   "*2\r\n*4\r\n:1\r\n:1398634705\r\n:15137\r\n*4\r\n$6\r\nLRANGE\r\n$4\r\nlist\r\n$1\r\n0\r\n$5\r\n16000\r\n*4\r\n:0\r\n:1398634583\r\n:14186\r\n*4\r\n$6\r\nLRANGE\r\n$4\r\nlist\r\n$1\r\n0\r\n$5\r\n16000\r\n"
  *
- * - other strings:
+ * - other test strings:
  *
  *    "*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel1\r\n:1\r\n*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel2\r\n:2\r\n*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel3\r\n:3\r\n*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel1\r\n:3\r\n"
  *	  "*4\r\n$8\r\npmessage\r\n$9\r\n*-channel\r\n$12\r\nfake-channel\r\n$12\r\nHello Fakes!\r\n"
@@ -42,8 +42,8 @@ var log = console.log
     , bulk = new Buffer( "$1\r\n1\r\n" )
     , integer = new Buffer( ":1\r\n" )
     , multibulk = new Buffer( "*3\r\n$3\r\nted\r\n$3\r\nbob\r\n$5\r\nalice\r\n" )
-    , nmultibulk1 = new Buffer( "*2\r\n*4\r\n:1\r\n:1398634705\r\n:15137\r\n*4\r\n$6\r\nLRANGE\r\n$4\r\nlist\r\n$1\r\n0\r\n$5\r\n16000\r\n*4\r\n:0\r\n:1398634583\r\n:14186\r\n*4\r\n$6\r\nLRANGE\r\n$4\r\nlist\r\n$1\r\n0\r\n$5\r\n16000\r\n" )
-    , nmultibulk2 = new Buffer( "*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel1\r\n:1\r\n*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel2\r\n:2\r\n*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel3\r\n:3\r\n*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel1\r\n:3\r\n" );
+    , smultibulk = new Buffer( "*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel1\r\n:1\r\n*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel2\r\n:2\r\n*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel3\r\n:3\r\n*3\r\n$9\r\nsubscribe\r\n$8\r\nchannel1\r\n:3\r\n" )
+    , nmultibulk = new Buffer( "*2\r\n*4\r\n:1\r\n:1398634705\r\n:15137\r\n*4\r\n$6\r\nLRANGE\r\n$4\r\nlist\r\n$1\r\n0\r\n$5\r\n16000\r\n*4\r\n:0\r\n:1398634583\r\n:14186\r\n*4\r\n$6\r\nLRANGE\r\n$4\r\nlist\r\n$1\r\n0\r\n$5\r\n16000\r\n" )
     ;
 
 b.on( 'end', function () {
@@ -54,23 +54,32 @@ b.on( 'miss', function ( r, i ) {
     log( '- "%s" rule needs data, index: "%s"', r.cid, i );
 } );
 
-b.on( 'match', function ( e, d ) {
-    if ( e ) {
-        log( '- data match (Redis error): "%s"', d );
-        return;
-    }
-    log( '- data match: "%s"', d );
+b.on( 'match', function ( e, d, convert ) {
+    log( '\n- data match%s: %j"', e ? ' (Redis error)' : '', convert( d ) );
 } );
 
 log( '\n- run all parser rules using a single chunk of data.' );
 
+log( 'parse "+" status reply: %s', status );
 b.parse( status );
+
+log( 'parse error "-" reply: %s', status );
 b.parse( error );
+
+log( 'parse "$" bulk reply: %s', status );
 b.parse( bulk );
+
+log( 'parse ":" integer reply: %s', status );
 b.parse( integer );
+
+log( 'parse "*" multibulk reply: %s', status );
 b.parse( multibulk );
-b.parse( nmultibulk1 );
-b.parse( nmultibulk2 );
+
+log( 'parse "*" (SUBSCRIBE) multibulk reply: %s', status );
+b.parse( smultibulk );
+
+log( 'parse "*" (SLOWLOG) nested multibulk reply: %s', status );
+b.parse( nmultibulk );
 
 log( '\n- run some parser rules using multiple chunks of data.' );
 
@@ -78,5 +87,5 @@ b.parse( status.slice( 0, 3 ) );
 b.parse( Buffer.concat( [ status.slice( 3 ), error.slice( 0, 13 ) ] )  );
 b.parse( error.slice( 13 ) );
 
-b.parse( nmultibulk1.slice( 0, 13 ) );
-b.parse( nmultibulk1.slice( 13 ) );
+b.parse( nmultibulk.slice( 0, 13 ) );
+b.parse( nmultibulk.slice( 13 ) );
