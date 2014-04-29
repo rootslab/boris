@@ -52,9 +52,10 @@ for ( ; i < mix.length; ) {
     b.parse( char );
 };
 
-log( '- parsed %d bytes, %d differents results were found.', mix.length, result.length );
-
-log( '- deep check if parsed result are correct (%d items).', tresult.length );
-assert.deepEqual( result, tresult );
+log( '- %d bytes parsed, %d differents results were found.', mix.length, result.length );
 
 log( '- result is:', util.inspect( tresult, false, Infinity, true ) );
+
+log( '- deep check if parsed result are correct (%d items).', tresult.length );
+
+assert.deepEqual( result, tresult );
