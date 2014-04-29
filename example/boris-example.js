@@ -59,10 +59,10 @@ b.on( 'match', function ( e, d ) {
         log( '- data match (Redis error): "%s"', d );
         return;
     }
-    log( '- data match: "%1"', d );
+    log( '- data match: "%s"', d );
 } );
 
-log( '\n- test all parser rules using a single chunk of data.' );
+log( '\n- run all parser rules using a single chunk of data.' );
 
 b.parse( status );
 b.parse( error );
@@ -72,8 +72,11 @@ b.parse( multibulk );
 b.parse( nmultibulk1 );
 b.parse( nmultibulk2 );
 
-log( '\n- test all parser rules using multiple chunks of data.' );
+log( '\n- run some parser rules using multiple chunks of data.' );
 
 b.parse( status.slice( 0, 3 ) );
 b.parse( Buffer.concat( [ status.slice( 3 ), error.slice( 0, 13 ) ] )  );
 b.parse( error.slice( 13 ) );
+
+b.parse( nmultibulk1.slice( 0, 13 ) );
+b.parse( nmultibulk1.slice( 13 ) );

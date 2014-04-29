@@ -1,6 +1,6 @@
 {
   "name": "boris",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Boris, a Redis Protocol Parser.",
   "homepage": "https://github.com/rootslab/boris",
   "private": false,
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "abaco": ">=1.2.0",
-    "peela": ">=1.1.2"
+    "peela": ">=1.1.6"
     },
   "devDependencies": {},
   "main": "index",

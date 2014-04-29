@@ -101,6 +101,8 @@ Boris.on( 'match', function ( Boolean isError, Array result ) { .. } )
 /*
  * A parse error occurred, the parser wasn't able to recognize
  * the current control char.
+ *
+ * NOTE: on error, parser state ( stack, rules ) will be reset.
  */
 Boris.on( 'error', function ( String emsg, Buffer data ) { .. } )
 
