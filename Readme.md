@@ -6,7 +6,9 @@
 
 [![NPM](https://nodei.co/npm-dl/boris.png)](https://nodei.co/npm/boris/)
 
-> _Boris_, a Redis Protocol Parser.
+> _Boris_, a Redis Protocol Parser. 
+
+> Boris is able to parse all kinds of Redis replies, also deeply nested multi-bulk replies.
 
 ###Install
 
