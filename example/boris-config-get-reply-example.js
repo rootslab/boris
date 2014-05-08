@@ -9,7 +9,7 @@ var log = console.log
 
 
 b.on( 'end', function () {
-    log( '- ok, buffer ends' );
+    log( '\n- ok, buffer ends' );
 } );
 
 b.on( 'miss', function ( r, i ) {
@@ -17,7 +17,8 @@ b.on( 'miss', function ( r, i ) {
 } );
 
 b.on( 'match', function ( e, d, convert ) {
-    log( '\n- data match%s: %j"', e ? ' (Redis error)' : '', d + '' );
+    log( '\n- data match%s: ', e ? ' (Redis error)' : '' );
+    log( util.inspect( convert( d ), false, 3, true ) );
 } );
 
 b.parse( rdata );
