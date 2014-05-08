@@ -18,7 +18,7 @@ b.on( 'miss', function ( r, i ) {
 
 b.on( 'match', function ( e, d, convert ) {
     log( '\n- data match:', e ? ' (Redis error)' : '' );
-    log( util.inspect( convert( d ) ) );
+    log( util.inspect( convert( d ), false, 3, true ) );
 } );
 
 b.parse( rdata );
