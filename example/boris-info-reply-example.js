@@ -1,4 +1,4 @@
-// use a Redis Info reply
+// use Redis INFO reply
 var log = console.log
     , util = require( 'util' )
     , Boris = require( '../' )
