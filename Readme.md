@@ -116,6 +116,11 @@ Boris.on( 'match', function ( Boolean isError, Array result, Function convert ) 
 Boris.on( 'error', function ( String emsg, Buffer data ) { .. } )
 
 /*
+ * NOTE: events below are disabled for perfomance reasons.
+ * If you need them, decomment statements in the code.
+ */
+
+/*
  * the current executing rule needs further data to continue.
  */
 Boris.on( 'miss', function ( Rule rule, Number position ) { .. } )
