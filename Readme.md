@@ -1,12 +1,13 @@
 ###Boris
 [![build status](https://secure.travis-ci.org/rootslab/boris.png?branch=master)](http://travis-ci.org/rootslab/boris) 
 [![NPM version](https://badge.fury.io/js/boris.png)](http://badge.fury.io/js/boris)
+[![build status](https://david-dm.org/rootslab/boris.png)](https://david-dm.org/rootslab/boris)
 
 [![NPM](https://nodei.co/npm/boris.png?downloads=true&stars=true)](https://nodei.co/npm/boris/)
 
 [![NPM](https://nodei.co/npm-dl/boris.png)](https://nodei.co/npm/boris/)
 
-> _Boris_, a Redis Protocol Parser. 
+> _**Boris**_, a pure javascript parser for the Redis protocol. 
 
 > Boris is able to parse all kinds of Redis replies, also deeply nested multi-bulk replies.
 
@@ -40,7 +41,7 @@ var b = Boris()
 var b = new Boris()
 ```
 
-###Private Properties
+###Properties
 
 > __WARNING__: Don't mess with these properties.
 
