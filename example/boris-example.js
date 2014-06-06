@@ -9,23 +9,23 @@
  *
  *  - produce some real replies to parse, using Spade client:
  *
- *    var s = require( './' )( { debug : { level : 0 } } ).connect();
+ *    var s = require( 'spade' )().connect();
  *
- *    s.set('a',1)        "+OK\r\n"
- *    s.get('a',1)        "-ERR wrong number of arguments for 'get' command\r\n"
- *    s.get('a')          "$1\r\n1\r\n"
- *    s.lpush('l', 1)     ":1\r\n"
+ *    s.commands.set('a',1)        "+OK\r\n"
+ *    s.commands.get('a',1)        "-ERR wrong number of arguments for 'get' command\r\n"
+ *    s.commands.get('a')          "$1\r\n1\r\n"
+ *    s.commands.lpush('l', 1)     ":1\r\n"
  *
- *    s.lpush('list', ['alice','bob','ted'])  ":3\r\n"
+ *    s.commands.lpush('list', ['alice','bob','ted'])  ":3\r\n"
  *
- *    s.lrange('list', 0, 4)      "*3\r\n$3\r\nted\r\n$3\r\nbob\r\n$5\r\nalice\r\n"
+ *    s.commands.lrange('list', 0, 4)      "*3\r\n$3\r\nted\r\n$3\r\nbob\r\n$5\r\nalice\r\n"
  *
  *    var fn = function(k) { var i = 0; for ( ; i < 16 * 1024; ++i ) { s.lpush('list', i ); } }
  *
- *    s.lrange( 'list', 0, 16000 );
- *    s.lrange( 'list', 0, 16000 );
+ *    s.commands.lrange( 'list', 0, 16000 );
+ *    s.commands.lrange( 'list', 0, 16000 );
  *
- *    s.slowlog.get(0);   "*2\r\n*4\r\n:1\r\n:1398634705\r\n:15137\r\n*4\r\n$6\r\nLRANGE\r\n$4\r\nlist\r\n$1\r\n0\r\n$5\r\n16000\r\n*4\r\n:0\r\n:1398634583\r\n:14186\r\n*4\r\n$6\r\nLRANGE\r\n$4\r\nlist\r\n$1\r\n0\r\n$5\r\n16000\r\n"
+ *    s.commands.slowlog.get(0);   "*2\r\n*4\r\n:1\r\n:1398634705\r\n:15137\r\n*4\r\n$6\r\nLRANGE\r\n$4\r\nlist\r\n$1\r\n0\r\n$5\r\n16000\r\n*4\r\n:0\r\n:1398634583\r\n:14186\r\n*4\r\n$6\r\nLRANGE\r\n$4\r\nlist\r\n$1\r\n0\r\n$5\r\n16000\r\n"
  *
  * - other test strings:
  *
