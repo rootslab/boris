@@ -7,9 +7,9 @@
 
 [![NPM](https://nodei.co/npm-dl/boris.png)](https://nodei.co/npm/boris/)
 
-> _**Boris**_, a pure javascript parser for the Redis protocol. 
+> _**Boris**_, a pure javascript parser for the Redis serialization protocol __[RESP](http://redis.io/topics/protocol)__.
 
-> Boris is able to parse all kinds of Redis replies, also deeply nested multi-bulk replies.
+> __Boris__ is able to parse all kinds of __Redis__ replies, also __deeply nested multi-bulk__ replies.
 
 ###Install
 
