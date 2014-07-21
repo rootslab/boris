@@ -1,11 +1,20 @@
 ###Boris
-[![build status](https://secure.travis-ci.org/rootslab/boris.png?branch=master)](http://travis-ci.org/rootslab/boris) 
-[![NPM version](https://badge.fury.io/js/boris.png)](http://badge.fury.io/js/boris)
-[![build status](https://david-dm.org/rootslab/boris.png)](https://david-dm.org/rootslab/boris)
 
-[![NPM](https://nodei.co/npm/boris.png?downloads=true&stars=true)](https://nodei.co/npm/boris/)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/boris#mit-license)
 
-[![NPM](https://nodei.co/npm-dl/boris.png)](https://nodei.co/npm/boris/)
+[![NPM VERSION](http://img.shields.io/npm/v/boris.svg)](https://www.npmjs.org/package/boris)
+[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/boris.svg)](http://travis-ci.org/rootslab/boris)
+[![BUILD STATUS](http://img.shields.io/david/rootslab/boris.svg)](https://david-dm.org/rootslab/boris)
+[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/boris.svg)](https://david-dm.org/rootslab/boris#info=devDependencies)
+
+[![NPM GRAPH1](https://nodei.co/npm-dl/boris.png)](https://nodei.co/npm/boris/)
+
+[![GITHUB tag](http://img.shields.io/github/tag/rootslab/boris.svg)](https://github.com/rootslab/boris/tags)
+[![ISSUES](http://img.shields.io/github/issues/rootslab/boris.svg)](https://github.com/rootslab/boris/issues)
+[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/boris.svg)](http://npm-stat.com/charts.html?package=boris)
+
+[![NPM GRAPH2](https://nodei.co/npm/boris.png?downloads=true&stars=true)](https://nodei.co/npm/boris/)
 
 > _**Boris**_, a pure javascript parser for the Redis serialization protocol __[RESP](http://redis.io/topics/protocol)__.
 
