@@ -1,6 +1,8 @@
 ###Boris
 
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/boris#mit-license)
+[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/boris.svg)](http://npm-stat.com/charts.html?package=boris)
 
 [![NPM VERSION](http://img.shields.io/npm/v/boris.svg)](https://www.npmjs.org/package/boris)
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/boris.svg)](http://travis-ci.org/rootslab/boris)
@@ -9,12 +11,8 @@
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/boris.png)](https://nodei.co/npm/boris/)
 
-[![GITHUB tag](http://img.shields.io/github/tag/rootslab/boris.svg)](https://github.com/rootslab/boris/tags)
-[![ISSUES](http://img.shields.io/github/issues/rootslab/boris.svg)](https://github.com/rootslab/boris/issues)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/boris.svg)](http://npm-stat.com/charts.html?package=boris)
-
 [![NPM GRAPH2](https://nodei.co/npm/boris.png?downloads=true&stars=true)](https://nodei.co/npm/boris/)
+
 
 > _**Boris**_, a pure javascript parser for the Redis serialization protocol __[RESP](http://redis.io/topics/protocol)__.
 
