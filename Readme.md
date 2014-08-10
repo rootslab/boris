@@ -3,14 +3,14 @@
 [![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/boris.svg?style=flat)](https://codeclimate.com/github/rootslab/boris)
 [![CODECLIMATE-TEST-COVERAGE](http://img.shields.io/codeclimate/coverage/github/rootslab/boris.svg?style=flat)](https://codeclimate.com/github/rootslab/boris)
 
-[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/boris#mit-license)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/boris.svg)](http://npm-stat.com/charts.html?package=boris)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/boris#mit-license)
+[![GITTIP](http://img.shields.io/gittip/rootslab.svg?style=flat)](https://www.gittip.com/rootslab/)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/boris.svg?style=flat)](http://npm-stat.com/charts.html?package=boris)
 
-[![NPM VERSION](http://img.shields.io/npm/v/boris.svg)](https://www.npmjs.org/package/boris)
-[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/boris.svg)](http://travis-ci.org/rootslab/boris)
-[![BUILD STATUS](http://img.shields.io/david/rootslab/boris.svg)](https://david-dm.org/rootslab/boris)
-[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/boris.svg)](https://david-dm.org/rootslab/boris#info=devDependencies)
+[![NPM VERSION](http://img.shields.io/npm/v/boris.svg?style=flat)](https://www.npmjs.org/package/boris)
+[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/boris.svg?style=flat)](http://travis-ci.org/rootslab/boris)
+[![BUILD STATUS](http://img.shields.io/david/rootslab/boris.svg?style=flat)](https://david-dm.org/rootslab/boris)
+[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/boris.svg?style=flat)](https://david-dm.org/rootslab/boris#info=devDependencies)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/boris.png)](https://nodei.co/npm/boris/)
 
