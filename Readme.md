@@ -1,5 +1,8 @@
 ###Boris
 
+[![CODECLIMATE](https://codeclimate.com/github/rootslab/boris/badges/gpa.svg)](https://codeclimate.com/github/rootslab/boris)
+[![CODECLIMATE-TEST-COVERAGE](https://codeclimate.com/github/rootslab/boris/badges/coverage.svg)](https://codeclimate.com/github/rootslab/boris)
+
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/boris#mit-license)
 [![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
 [![NPM DOWNLOADS](http://img.shields.io/npm/dm/boris.svg)](http://npm-stat.com/charts.html?package=boris)

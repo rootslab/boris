@@ -1,6 +1,6 @@
 {
   "name": "boris",
-  "version": "0.11.1",
+  "version": "0.11.2",
   "description": "Boris, a pure javascript parser for the Redis serialization protocol (RESP).",
   "homepage": "https://github.com/rootslab/boris",
   "private": false,
@@ -22,7 +22,7 @@
     "email": "44gatti@gmail.com"
   },
   "dependencies": {
-    "abaco": "=1.9.2",
+    "abaco": "=1.10.0",
     "bolgia" : "=2.6.2",
     "peela": "=1.2.1"
     },
