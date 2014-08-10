@@ -11,4 +11,4 @@ after_script:
 # after_success:
 addons:
  codeclimate:
-  repo_token: 1c88dbab7c4124cd3b7baef49c272120014beca0cd347ef740e7acbbf1a080bf
+  repo_token: fed91296d563623c9d5b4496c033576f19bcc342dd2481b55cf920235fb00c08

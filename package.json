@@ -1,6 +1,6 @@
 {
   "name": "boris",
-  "version": "0.11.2",
+  "version": "0.11.3",
   "description": "Boris, a pure javascript parser for the Redis serialization protocol (RESP).",
   "homepage": "https://github.com/rootslab/boris",
   "private": false,
@@ -32,7 +32,7 @@
     "node": ">=0.8.x"
   },
   "scripts": {
-    "test": "bash test/run.sh"
+    "test": "node test/run.js"
   },
   "license": "MIT",
   "readmeFilename": "Readme.md",
