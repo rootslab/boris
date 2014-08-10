@@ -34,7 +34,6 @@
  */
 
 var log = console.log
-    , util = require( 'util' )
     , Boris = require( '../' )
     , b = Boris()
     , status = new Buffer( "+OK\r\n" )
