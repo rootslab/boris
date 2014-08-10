@@ -1,7 +1,7 @@
 ###Boris
 
-[![CODECLIMATE](https://codeclimate.com/github/rootslab/boris/badges/gpa.svg)](https://codeclimate.com/github/rootslab/boris)
-[![CODECLIMATE-TEST-COVERAGE](https://codeclimate.com/github/rootslab/boris/badges/coverage.svg)](https://codeclimate.com/github/rootslab/boris)
+[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/boris.svg?style=flat)](https://codeclimate.com/github/rootslab/boris)
+[![CODECLIMATE-TEST-COVERAGE](http://img.shields.io/codeclimate/coverage/github/rootslab/boris.svg?style=flat)](https://codeclimate.com/github/rootslab/boris)
 
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/boris#mit-license)
 [![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
