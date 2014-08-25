@@ -49,6 +49,18 @@ var b = Boris()
 // or
 var b = new Boris()
 ```
+####Options
+
+> Default options are listed.
+
+```javascript
+opt = {
+    /*
+     * For default, the parser returns Buffers,
+     */
+    return_buffers : true
+}
+```
 
 ###Properties
 

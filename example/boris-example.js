@@ -35,7 +35,7 @@
 
 var log = console.log
     , Boris = require( '../' )
-    , b = Boris()
+    , b = Boris( { return_buffers : false } )
     , status = new Buffer( "+OK\r\n" )
     , error = new Buffer( "-ERR wrong number of arguments for 'get' command\r\n" )
     , bulk = new Buffer( "$1\r\n1\r\n" )
@@ -54,7 +54,7 @@ b.on( 'miss', function ( r, i ) {
 } );
 
 b.on( 'match', function ( e, d, convert ) {
-    log( '  -> match%s: %j"', e ? ' (Redis error)' : '', convert( d ) );
+    log( '  -> match%s: %j"', e ? ' (Redis error)' : '', d );
 } );
 
 log( '\n- run all parser rules using a single chunk of data.' );
