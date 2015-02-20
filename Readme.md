@@ -1,20 +1,23 @@
 ###Boris
 
-[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/boris.svg?style=flat)](https://codeclimate.com/github/rootslab/boris)
-[![CODECLIMATE-TEST-COVERAGE](http://img.shields.io/codeclimate/coverage/github/rootslab/boris.svg?style=flat)](https://codeclimate.com/github/rootslab/boris)
-
-[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/boris#mit-license)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg?style=flat)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/boris.svg?style=flat)](http://npm-stat.com/charts.html?package=boris)
-
 [![NPM VERSION](http://img.shields.io/npm/v/boris.svg?style=flat)](https://www.npmjs.org/package/boris)
+[![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/boris)
+[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/boris.svg?style=flat)](https://codeclimate.com/github/rootslab/boris)
+[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/boris.svg?style=flat)](https://codeclimate.com/github/rootslab/boris)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/boris#mit-license)
+
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/boris.svg?style=flat)](http://travis-ci.org/rootslab/boris)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/boris.svg?style=flat)](https://david-dm.org/rootslab/boris)
 [![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/boris.svg?style=flat)](https://david-dm.org/rootslab/boris#info=devDependencies)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/boris.svg?style=flat)](http://npm-stat.com/charts.html?package=boris)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/boris.png)](https://nodei.co/npm/boris/)
 
-[![NPM GRAPH2](https://nodei.co/npm/boris.png?downloads=true&stars=true)](https://nodei.co/npm/boris/)
+[![NPM GRAPH2](https://nodei.co/npm/boris.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/boris/)
+
+[![status](https://sourcegraph.com/api/repos/github.com/rootslab/boris/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/boris)
+[![views](https://sourcegraph.com/api/repos/github.com/rootslab/boris/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/boris)
+[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/boris/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/boris)
 
 > _**Boris**_, a pure javascript parser for the Redis serialization protocol __[RESP](http://redis.io/topics/protocol)__.
 
@@ -159,7 +162,7 @@ Boris.on( 'end', function () { .. } )
 
 ### MIT License
 
-> Copyright (c) 2014 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
+> Copyright (c) 2015 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
@@ -179,3 +182,5 @@ Boris.on( 'end', function () { .. } )
 > CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 > TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 > SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[![GA](https://ga-beacon.appspot.com/UA-53998692-1/boris/Readme?pixel)](https://github.com/igrigorik/ga-beacon)
