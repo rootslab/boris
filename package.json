@@ -1,42 +1,43 @@
 {
-  "name": "boris",
-  "version": "0.12.1",
-  "description": "Boris, a pure javascript parser for the Redis serialization protocol (RESP).",
-  "homepage": "https://github.com/rootslab/boris",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/rootslab/boris.git"
-  },
-  "keywords": [
-    "boris",
-    "redis",
-    "parser",
-    "protocol",
-    "parse",
-    "RESP",
-    "Redis Serialization Protocol"
-  ],
-  "author": {
-    "name": "Guglielmo Ferri",
-    "email": "44gatti@gmail.com"
-  },
-  "dependencies": {
-    "abaco": "=1.10.1",
-    "bolgia" : ">=2.7.4",
-    "peela": "=1.3.0"
-    },
-  "devDependencies": {},
-  "main": "index",
-  "engines": {
+  "name": "boris"
+  , "version": "0.12.2"
+  , "description": "Boris a pure javascript parser for the Redis serialization protocol (RESP)."
+  , "homepage": "https://github.com/rootslab/boris"
+  , "private": false
+  , "repository": {
+    "type": "git"
+    , "url": "git://github.com/rootslab/boris.git"
+  }
+  , "keywords": [
+    "boris"
+    , "redis"
+    , "parser"
+    , "protocol"
+    , "parse"
+    , "RESP"
+    , "Redis Serialization Protocol"
+  ]
+  , "author": {
+    "name": "Guglielmo Ferri"
+    , "email": "44gatti@gmail.com"
+  }
+  , "dependencies": {
+    "abaco": "=1.10.2"
+    , "bolgia" : ">=2.7.4"
+    , "peela": "=1.3.0"
+  }
+  , "devDependencies": {
+  }
+  , "main": "index"
+  , "engines": {
     "node": ">=0.8.x"
-  },
-  "scripts": {
+  }
+  , "scripts": {
     "test": "node test/run.js"
-  },
-  "license": "MIT",
-  "readmeFilename": "Readme.md",
-  "bugs": {
+  }
+  , "license": "MIT"
+  , "readmeFilename": "Readme.md"
+  , "bugs": {
     "url": "https://github.com/rootslab/boris/issues"
   }
 }
