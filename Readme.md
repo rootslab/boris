@@ -1,29 +1,25 @@
-###Boris
+### Boris
 
 [![NPM VERSION](http://img.shields.io/npm/v/boris.svg?style=flat)](https://www.npmjs.org/package/boris)
 [![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/boris)
-[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/boris.svg?style=flat)](https://codeclimate.com/github/rootslab/boris)
 [![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/boris.svg?style=flat)](https://codeclimate.com/github/rootslab/boris)
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/boris#mit-license)
 
+![NODE VERSION](https://img.shields.io/node/v/boris.svg)
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/boris.svg?style=flat)](http://travis-ci.org/rootslab/boris)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/boris.svg?style=flat)](https://david-dm.org/rootslab/boris)
 [![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/boris.svg?style=flat)](https://david-dm.org/rootslab/boris#info=devDependencies)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/boris.svg?style=flat)](http://npm-stat.com/charts.html?package=boris)
 
-[![NPM GRAPH1](https://nodei.co/npm-dl/boris.png)](https://nodei.co/npm/boris/)
+[![NPM MONTHLY](http://img.shields.io/npm/dm/boris.svg?style=flat)](http://npm-stat.com/charts.html?package=boris)
+![NPM YEARLY](https://img.shields.io/npm/dy/boris.svg)
 
-[![NPM GRAPH2](https://nodei.co/npm/boris.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/boris/)
-
-[![status](https://sourcegraph.com/api/repos/github.com/rootslab/boris/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/boris)
-[![views](https://sourcegraph.com/api/repos/github.com/rootslab/boris/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/boris)
-[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/boris/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/boris)
+[![NPM GRAPH](https://nodei.co/npm/boris.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/boris/)
 
 > _**Boris**_, a pure javascript parser for the Redis serialization protocol __[RESP](http://redis.io/topics/protocol)__.
 
 > __Boris__ is able to parse all kinds of __Redis__ replies, also __deeply nested multi-bulk__ replies.
 
-###Install
+### Install
 
 ```bash
 $ npm install boris [-g]
@@ -37,13 +33,13 @@ var Boris = require( 'boris' );
 ```
 > See [examples](example/).
 
-###Run Tests
+### Run Tests
 
 ```bash
 $ cd boris/
 $ npm test
 ```
-###Constructor
+### Constructor
 
 > Create an instance.
 
@@ -52,7 +48,7 @@ var b = Boris()
 // or
 var b = new Boris()
 ```
-####Options
+#### Options
 
 > Default options are listed.
 
@@ -65,7 +61,7 @@ opt = {
 }
 ```
 
-###Properties
+### Properties
 
 > __WARNING__: Don't mess with these properties.
 
@@ -102,7 +98,7 @@ Boris.cpos : Number
 Boris.peela : Peela
 ```
 
-###Methods
+### Methods
 
 > Arguments within [ ] are optional.
 
@@ -119,7 +115,7 @@ Boris#reset() : undefined
 
 ```
 
-###Events
+### Events
 
 ```javascript
 /*
@@ -182,5 +178,3 @@ Boris.on( 'end', function () { .. } )
 > CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 > TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 > SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-[![GA](https://ga-beacon.appspot.com/UA-53998692-1/boris/Readme?pixel)](https://github.com/igrigorik/ga-beacon)
